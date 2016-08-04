@@ -26,31 +26,12 @@ function calc_total(){
 </script>
     </head>
     <body onload="getData(null);">
-        <h1>文具ショップ</h1>
-        <form name="myform" action="/OrderServlet" method="post">
-  <table border=2 cellpadding=4>
-  <tr><td><h2>
-  <input type="checkbox" value="100" onClick="calc_total()">
-  　えんぴつ（100円）</td></tr>
-  <tr><td><h2>
-  <input type="checkbox" value="100" onClick="calc_total()">
-  　消しゴム（100円）</td></tr>
-  <tr><td><h2>
-  <input type="checkbox" value="100" onClick="calc_total()">
-  ボールペン（100円）</td></tr>
-  <tr><td><h2>
-  <input type="checkbox" value="500" onClick="calc_total()">
-  　定規セット（500円）</td></tr>
-  <tr><td><h2>
-  <input type="checkbox" value="200" onClick="calc_total()">
-  　コンパス（200円）</td></tr>
-  <tr><td align="center"><h2>
-  合計金額：
-  <input type="text" name="goukei">
-  </td></tr>
-  </table>
-  <div><a href="kanryou.html">注文</a></div>
- </form>     
+     <h1>文具ショップ</h1>
+     <form action="/Login" method="POST">
+      ユーザID：<input type="input" name="userid"><br>
+      パスワード：<input type="password" name="password"><br>
+      <input type="submit" value="ログイン">
+    </form>  
     </body>
 </html>
 
